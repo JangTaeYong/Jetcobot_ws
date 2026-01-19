@@ -24,7 +24,9 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'pc_gui = jetcobot_control.pc_gui:main'
+            'pc_gui = jetcobot_control.pc_gui:main',
+            'pb = jetcobot_control.pose_publisher:main',  # 'broadcaster'를 'publisher'로 변경
+            'mb = jetcobot_control.moveit_bridge:main',
         ],
-    },
+    }
 )
